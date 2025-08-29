@@ -1,26 +1,24 @@
-const readline = require("readline-sync")
-
 // 1 - Login e senha
 const senhaSecreta = "abc123";
-let senhaDigitada = readline.question("Digite a senha secreta: ");
+let senhaDigitada = prompt("Digite a senha secreta: ");
 
-console.log("Está correta? " + (senhaDigitada === senhaSecreta));
+alert("Está correta? " + (senhaDigitada === senhaSecreta));
 
 // 2 - Maioria da turma está presente
-const totalAlunos = readline.question("Quantos alunos tem na turma? ");
-let alunosPresentesHoje = readline.question("Quantos alunos responderam a chamada? ");
+const totalAlunos = prompt("Quantos alunos tem na turma? ");
+let alunosPresentesHoje = prompt("Quantos alunos responderam a chamada? ");
 
-console.log("A maioria da turma respondeu a chamada? " + (alunosPresentesHoje > totalAlunos/2));
+alert("A maioria da turma respondeu a chamada? " + (alunosPresentesHoje > totalAlunos/2));
 
 // 3 - Ainda é boa tarde
-const horaAtual = readline.question("Digite a hora atual: ");
-console.log("Posso desejar boa tarde? " + (horaAtual <= 17 && horaAtual >= 12));
+const horaAtual = prompt("Digite a hora atual: ");
+alert("Posso desejar boa tarde? " + (horaAtual <= 17 && horaAtual >= 12));
 
 // 4 - Voto facultativo
-const idade = readline.question("Digite a sua idade: ");
-console.log("Seu voto é facultativo? " + (idade < 18 || idade > 70));
+const idade = prompt("Digite a sua idade: ");
+alert("Seu voto é facultativo? " + (idade < 18 || idade > 70));
 
 // 5 - Cidadão emancipado
-const sexo = readline.question("Qual o seu sexo (Masculino/Feminino)? ");
-const idade2 = readline.question("Qual a sua idade? ");
-console.log("Você pode ser emancipado? " + ((sexo == "Masculino" && idade2 >= 18) || (sexo == "Feminino" && idade2 >= 21)));
+const sexo = prompt("Qual o seu sexo (Masculino/Feminino)? ");
+const idade2 = prompt("Qual a sua idade? ");
+alert("Você pode ser emancipado? " + ((sexo == "Masculino" && idade2 >= 18) || (sexo == "Feminino" && idade2 >= 21)));
