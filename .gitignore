@@ -1,0 +1,16 @@
+# Dependências do Node
+node_modules/
+
+# Logs
+*.log
+
+# Pastas de build
+dist/
+build/
+
+# Configurações do editor
+.vscode/
+.idea/
+
+# Outros arquivos sensíveis
+.env
